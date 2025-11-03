@@ -4,7 +4,7 @@ body {
     position: relative;
     min-height: 100vh;
     background-color: #1a1a3a;
-    background-image: linear-gradient(180deg, #1a1a3a 0%, #0d0d1f 100%);
+    background-image: linear-gradient(180deg, #{$light-navy} 0%, #{$dark-navy} 100%);
     padding-inline: 1rem;
     @include respond("sm") {
         padding-inline: 2rem;

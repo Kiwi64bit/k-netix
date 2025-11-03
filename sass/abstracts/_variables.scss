@@ -9,8 +9,14 @@ $breakpoints: (
     "xxl": 1400px,
 );
 
-$purple: #1a1a3a;
-$light-blue: hsl(182, 100%, 50%);
+$light-navy: hsl(240, 40%, 12%);
+$dark-navy: hsl(240, 40%, 8%);
+$gunmetal-grey: hsl(200, 12%, 24%);
+$cyan: hsl(180, 100%, 50%);
+$magenta: hsl(300, 100%, 50%);
+
+$primary-color: $cyan;
+$accent-color: $magenta;
 
 $font1: "IBM Plex Sans", sans-serif;
 $font2: "Inter", sans-serif;

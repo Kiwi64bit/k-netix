@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --primary-color: hsl(180, 100%, 50%);
+  --accent-color: hsl(300, 100%, 50%);
+}
+
 body {
   position: relative;
   min-height: 100vh;
   background-color: #1a1a3a;
-  background-image: linear-gradient(180deg, #1a1a3a 0%, #0d0d1f 100%);
+  background-image: linear-gradient(180deg, hsl(240, 40%, 12%) 0%, hsl(240, 40%, 8%) 100%);
   padding-inline: 1rem;
 }
 @media (min-width: 576px) {
@@ -42,32 +47,32 @@ body {
   font-weight: 400;
 }
 
-.text-light-blue {
-  color: hsl(182, 100%, 50%);
+.text-primary {
+  color: hsl(180, 100%, 50%);
 }
 
-.fill-light-blue {
-  fill: hsl(182, 100%, 50%);
+.fill-primary {
+  fill: hsl(180, 100%, 50%);
 }
 
-.btn-light-blue {
+.btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: hsl(182, 100%, 50%);
+  --bs-btn-bg: hsl(180, 100%, 50%);
   --bs-btn-border-color: var(--bs-btn-bg);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: hsl(182, 100%, 35%);
+  --bs-btn-hover-bg: hsl(180, 100%, 35%);
   --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: hsl(182, 100%, 25%);
+  --bs-btn-active-bg: hsl(180, 100%, 25%);
   --bs-btn-active-border-color: var(--bs-btn-active-bg);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: hsl(182, 100%, 50%);
+  --bs-btn-disabled-bg: hsl(180, 100%, 50%);
   --bs-btn-disabled-border-color: var(--bs-btn-disabled-bg);
 }
 
-.btn-semi-transparent {
+.btn-semi-opaque {
   --bs-btn-color: #fff;
   --bs-btn-bg: hsla(0, 0%, 94%, 0.1);
   --bs-btn-border-color: hsla(0, 0%, 94%, 0);
@@ -85,10 +90,10 @@ body {
 }
 
 .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: hsla(240, 40%, 8%, 0.8);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   font-weight: 600;
   border-bottom: 1px solid hsla(240, 9%, 66%, 0.2);
 }
@@ -103,11 +108,11 @@ body {
 }
 .navbar .nav-item:hover,
 .navbar .nav-item .active {
-  color: hsl(182, 100%, 50%);
+  color: var(--primary-color);
 }
 .navbar .nav-item:hover *,
 .navbar .nav-item .active * {
-  color: hsl(182, 100%, 50%);
+  color: var(--primary-color);
 }
 
 .hero .text h1 {
@@ -135,6 +140,37 @@ body {
 }
 .hero .btn {
   font-weight: 600;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.about .about-card {
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: hsla(200, 12%, 24%, 0.2);
+  border: 1px solid hsla(0, 100%, 100%, 0.2);
+  box-shadow: 0 0 16px hsl(from var(--card-color) h s l/0.5);
+  width: min(40rem, 100%);
+}
+.about .about-card:nth-of-type(2n) {
+  --card-color: var(--accent-color);
+  translate: 25% 0;
+  direction: ltr;
+}
+.about .about-card:nth-of-type(2n + 1) {
+  --card-color: var(--primary-color);
+  translate: -25% 0;
+  direction: rtl;
+}
+.about .about-card h4 {
+  color: var(--card-color);
 }
 
 /*# sourceMappingURL=style.css.map */

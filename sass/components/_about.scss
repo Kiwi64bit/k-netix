@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+
+.about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .about-card {
+        backdrop-filter: blur(8px);
+        padding: 1rem;
+        border-radius: 0.75rem;
+        background-color: transparentize($gunmetal-grey, 0.8);
+        border: 1px solid hsla(0, 100%, 100%, 0.2);
+        box-shadow: 0 0 16px hsl(from var(--card-color) h s l / 0.5);
+        width: min(40rem, 100%);
+
+        &:nth-of-type(2n) {
+            --card-color: var(--accent-color);
+            translate: 25% 0;
+            direction: ltr;
+        }
+        &:nth-of-type(2n + 1) {
+            --card-color: var(--primary-color);
+            translate: -25% 0;
+            direction: rtl;
+        }
+
+        h4 {
+            color: var(--card-color);
+        }
+    }
+}
