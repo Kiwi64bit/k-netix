@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
+    "xxl": 1400px,
+);
+
+$purple: #1a1a3a;
+$light-blue: hsl(182, 100%, 50%);
+
+$font1: "IBM Plex Sans", sans-serif;
+$font2: "Inter", sans-serif;

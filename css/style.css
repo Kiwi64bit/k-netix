@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  position: relative;
+  min-height: 100vh;
+  background-color: #1a1a3a;
+  background-image: linear-gradient(180deg, #1a1a3a 0%, #0d0d1f 100%);
+  padding-inline: 1rem;
+}
+@media (min-width: 576px) {
+  body {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding-inline: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    padding-inline: 5rem;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    padding-inline: 10rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.text-light-blue {
+  color: hsl(182, 100%, 50%);
+}
+
+.fill-light-blue {
+  fill: hsl(182, 100%, 50%);
+}
+
+.btn-light-blue {
+  --bs-btn-color: #000;
+  --bs-btn-bg: hsl(182, 100%, 50%);
+  --bs-btn-border-color: var(--bs-btn-bg);
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: hsl(182, 100%, 35%);
+  --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: hsl(182, 100%, 25%);
+  --bs-btn-active-border-color: var(--bs-btn-active-bg);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: hsl(182, 100%, 50%);
+  --bs-btn-disabled-border-color: var(--bs-btn-disabled-bg);
+}
+
+.btn-semi-transparent {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: hsla(0, 0%, 94%, 0.1);
+  --bs-btn-border-color: hsla(0, 0%, 94%, 0);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: hsla(0, 0%, 94%, 0.15);
+  --bs-btn-hover-border-color: hsla(0, 0%, 94%, 0);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: hsla(0, 0%, 94%, 0.175);
+  --bs-btn-active-border-color: hsla(0, 0%, 94%, 0);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: hsla(0, 0%, 94%, 0.1);
+  --bs-btn-disabled-border-color: hsla(0, 0%, 94%, 0);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  border-bottom: 1px solid hsla(240, 9%, 66%, 0.2);
+}
+.navbar * {
+  font-weight: 600;
+}
+.navbar .nav-item {
+  transition: color 0.25s ease;
+}
+.navbar .nav-item * {
+  transition: color 0.25s ease;
+}
+.navbar .nav-item:hover,
+.navbar .nav-item .active {
+  color: hsl(182, 100%, 50%);
+}
+.navbar .nav-item:hover *,
+.navbar .nav-item .active * {
+  color: hsl(182, 100%, 50%);
+}
+
+.hero .text h1 {
+  font-size: 2rem;
+}
+@media (min-width: 576px) {
+  .hero .text h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero .text h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero .text h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .text h1 {
+    font-size: 4rem;
+  }
+}
+.hero .btn {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */

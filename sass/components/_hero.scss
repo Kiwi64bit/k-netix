@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.hero {
+    .text {
+        h1 {
+            font-size: 2rem;
+            @include respond("sm") {
+                font-size: 2.5rem;
+            }
+            @include respond('md') {
+                font-size: 3rem;
+            }
+            @include respond('lg') {
+                font-size: 3.5rem;
+            }
+            @include respond('xl') {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .btn {
+        font-weight: 600;
+    }
+}
