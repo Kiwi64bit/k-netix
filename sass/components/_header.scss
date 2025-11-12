@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+
+header {
+    min-height: fit-content;
+    height: 100vh;
+    max-width: 960px;
+    margin: auto;
+}

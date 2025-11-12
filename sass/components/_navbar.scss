@@ -1,10 +1,9 @@
 @use "../abstracts" as *;
+@use "sass:color";
 
 .navbar {
-    background: transparentize($dark-navy, 0.2);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    width: 100%;
+    margin-inline: auto;
     font-weight: 600;
     border-bottom: 1px solid hsla(240, 9%, 66%, 0.2);
 

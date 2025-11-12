@@ -1,7 +1,8 @@
 @use "../abstracts" as *;
+@use "sass:color";
+@use "sass:list";
 
 .about {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,23 +10,46 @@
     gap: 3rem;
 
     .about-card {
-        backdrop-filter: blur(8px);
+        --offset-x: 25%;
+        --translate-x: 0;
+        --translate-y: 0;
+        // backdrop-filter: blur(8px);
         padding: 1rem;
         border-radius: 0.75rem;
-        background-color: transparentize($gunmetal-grey, 0.8);
-        border: 1px solid hsla(0, 100%, 100%, 0.2);
-        box-shadow: 0 0 16px hsl(from var(--card-color) h s l / 0.5);
-        width: min(40rem, 100%);
+        background-color: color.adjust($gunmetal-grey, $alpha: 0.8);
+        border: 2px solid hsl(from var(--card-color) h s l / 0.5);
+        width: 100%;
+        translate: var(--translate-x) var(--translate-y);
+        transition:
+            translate 0.25s ease,
+            box-shadow 0.25s ease;
+        @include respond("md") {
+            width: calc(100% / (1 + 2 * var(--offset-x) / 100%));
+            max-width: 40rem;
+        }
+
+        &:hover {
+            --translate-y: -12.5px;
+            box-shadow:
+                0 5px hsl(from var(--card-color) h s l / 0.4),
+                0 10px hsl(from var(--card-color) h s l / 0.3),
+                0 15px hsl(from var(--card-color) h s l / 0.2),
+                0 20px hsl(from var(--card-color) h s l / 0.1),
+                0 25px hsl(from var(--card-color) h s l / 0.05),
+                0 0 16px hsl(from var(--card-color) h s l / 0.4);
+        }
 
         &:nth-of-type(2n) {
             --card-color: var(--accent-color);
-            translate: 25% 0;
-            direction: ltr;
+            @include respond("md") {
+                --translate-x: var(--offset-x);
+            }
         }
         &:nth-of-type(2n + 1) {
             --card-color: var(--primary-color);
-            translate: -25% 0;
-            direction: rtl;
+            @include respond("md") {
+                --translate-x: calc(-1 * var(--offset-x));
+            }
         }
 
         h4 {

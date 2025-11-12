@@ -9,52 +9,53 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css.map">
     <script src="js/bootstrap.bundle.js" defer></script>
+    <script src="js/slider3D.js"></script>
     <script src="js/index.js" defer></script>
 </head>
 
 <body data-bs-theme="dark">
-    <nav class="navbar fixed-top navbar-expand-md py-3">
-        <div class="container">
-            <a class="navbar-brand d-flex justify-content-center align-items-center gap-2" href="#">
-                <svg class="fill-primary" style="width: 1.5rem; height: 1.5rem;" viewBox="0 0 48 48"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path clip-rule="evenodd"
-                        d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
-                        fill-rule="evenodd">
-                    </path>
-                </svg>
-                Kiwinetix
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
-                <ul class="navbar-nav text-center ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Simulations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lessons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="d-flex justify-content-center align-items-center gap-2 px-2">
-                        <button class="btn btn-custom-primary">Sign Up</button>
-                        <button class="btn btn-semi-opaque">Log In</button>
-                    </li>
-                </ul>
+    <header id="home" class="p-2 d-flex flex-column">
+        <nav class="navbar navbar-expand-lg py-2 px-4">
+            <div class="container">
+                <a class="navbar-brand d-flex justify-content-center align-items-center gap-2" href="#">
+                    <svg class="fill-primary" style="width: 1.5rem; height: 1.5rem;" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                            d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                            fill-rule="evenodd">
+                        </path>
+                    </svg>
+                    Kiwinetix
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+                    <ul class="navbar-nav text-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#simulations">Simulations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lessons">Lessons</a>
+                        </li>
+                        <li class="d-flex justify-content-center align-items-center gap-2 px-2">
+                            <button class="btn btn-custom-primary">Sign Up</button>
+                            <button class="btn btn-semi-opaque">Log In</button>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <section id="hero" class="hero vh-100 d-flex justify-content-center align-items-center">
-        <div class="container-fluid text-center d-flex flex-column justify-content-center align-items-center gap-3">
-            <div class="text text-center d-flex flex-column gap-2">
+        <div class="hero p-3 flex-grow-1 d-flex justify-content-center align-items-center">
+            <div class="text-content text-center">
                 <h1>
                     Explore the Universe of Physics
                 </h1>
@@ -63,15 +64,14 @@
                     complex
                     concepts, and discover the laws that govern our world.
                 </p>
+                <button class="btn btn-custom-primary px-3 py-2 rounded-3">
+                    Start Exploring
+                </button>
             </div>
-            <button class="btn btn-custom-primary px-3 py-2 rounded-3">
-                Start Exploring
-            </button>
         </div>
-    </section>
+    </header>
 
-    <section id="about" class="about py-3">
-        <div class="vline"></div>
+    <section id="about" class="about py-3 px-5">
         <div class="about-card">
             <h4>About the Site</h4>
             <h5>Physics is your friend</h5>
@@ -120,6 +120,55 @@
                 it evolved into a resource for learners worldwide who love to explore physics beyond the textbook.
             </p>
         </div>
+    </section>
+
+    <section id="simulations" class="simulations-preview">
+        <div class="slider-3d" style="--size: 10;">
+            <div class="slider-indicators">
+                <button type="button" data-slide-to="0" class="active"></button>
+                <button type="button" data-slide-to="1"></button>
+                <button type="button" data-slide-to="2"></button>
+                <button type="button" data-slide-to="3"></button>
+                <button type="button" data-slide-to="4"></button>
+                <button type="button" data-slide-to="5"></button>
+                <button type="button" data-slide-to="6"></button>
+                <button type="button" data-slide-to="7"></button>
+                <button type="button" data-slide-to="8"></button>
+                <button type="button" data-slide-to="9"></button>
+            </div>
+            <div class="slider-3d-perspective-container">
+                <div class="slider-3d-inner">
+                    <div class="item in-view" style="--index: 0;"><img src="images/dragon_1.jpg" alt="dragon_1"></div>
+                    <div class="item" style="--index: 1;"><img src="images/dragon_2.jpg" alt="dragon_2"></div>
+                    <div class="item" style="--index: 2;"><img src="images/dragon_3.jpg" alt="dragon_3"></div>
+                    <div class="item" style="--index: 3;"><img src="images/dragon_4.jpg" alt="dragon_4"></div>
+                    <div class="item" style="--index: 4;"><img src="images/dragon_5.jpg" alt="dragon_5"></div>
+                    <div class="item" style="--index: 5;"><img src="images/dragon_6.jpg" alt="dragon_6"></div>
+                    <div class="item" style="--index: 6;"><img src="images/dragon_7.jpg" alt="dragon_7"></div>
+                    <div class="item" style="--index: 7;"><img src="images/dragon_8.jpg" alt="dragon_8"></div>
+                    <div class="item" style="--index: 8;"><img src="images/dragon_9.jpg" alt="dragon_9"></div>
+                    <div class="item" style="--index: 9;"><img src="images/dragon_10.jpg" alt="dragon_10"></div>
+                </div>
+            </div>
+            <button class="slider-control-prev" type="button">
+                <span class="slider-control-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                    </svg>
+                </span>
+            </button>
+            <button class="slider-control-next" type="button">
+                <span class="slider-control-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <section id="learn" class="learn">
+        
     </section>
 </body>
 
