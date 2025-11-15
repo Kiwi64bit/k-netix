@@ -13,10 +13,11 @@
         --offset-x: 25%;
         --translate-x: 0;
         --translate-y: 0;
+        --card-color: var(--accent-color);
         // backdrop-filter: blur(8px);
         padding: 1rem;
         border-radius: 0.75rem;
-        background-color: color.adjust($gunmetal-grey, $alpha: 0.8);
+        background-color: color.adjust($dark-gray, $alpha: -0.4);
         border: 2px solid hsl(from var(--card-color) h s l / 0.5);
         width: 100%;
         translate: var(--translate-x) var(--translate-y);
@@ -40,13 +41,11 @@
         }
 
         &:nth-of-type(2n) {
-            --card-color: var(--accent-color);
             @include respond("md") {
                 --translate-x: var(--offset-x);
             }
         }
         &:nth-of-type(2n + 1) {
-            --card-color: var(--primary-color);
             @include respond("md") {
                 --translate-x: calc(-1 * var(--offset-x));
             }

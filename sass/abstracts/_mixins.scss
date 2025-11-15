@@ -1,9 +1,16 @@
 @use "./variables" as *;
 @use "sass:map";
+@use "sass:meta";
 
 @mixin respond($breakpoint) {
     $breakpoint-value: map.get($breakpoints, $breakpoint);
-    @media (min-width: $breakpoint-value) {
-        @content;
+    @if $breakpoint-value {
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+    } @else if meta.type-of($breakpoint) == "number" {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
     }
 }

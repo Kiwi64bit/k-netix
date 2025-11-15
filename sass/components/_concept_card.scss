@@ -1,0 +1,117 @@
+@use "../abstracts" as *;
+@use "sass:color";
+
+.concept-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.concept-card {
+    --bg-color: #{color.adjust($dark-gray, $alpha: -0.5)};
+    --border-color: #{color.adjust($violet-blue, $alpha: -0.7)};
+    --border-color-hover: #{$violet-blue};
+    --header-bg-color: #{$violet-blue};
+    --equation-bg-color: #{color.adjust($violet-blue, $alpha: -0.8)};
+    --variable-item-bg-color: #{color.adjust($muted-indigo)};
+    background-color: var(--bg-color);
+    border-radius: 0.75rem;
+    border: 2px var(--border-color) solid;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    cursor: pointer;
+    transition: border 0.25s ease;
+
+    &:hover {
+        border-color: var(--border-color-hover);
+
+        .concept-card-header {
+            &::before {
+                content: "";
+                left: 100%;
+            }
+        }
+    }
+
+    .concept-card-header {
+        position: relative;
+        padding: 1rem 1.5rem;
+        background-color: var(--header-bg-color);
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background-color: hsl(0 0% 100% / 0.2);
+            transition: left 0.5s;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='%23e3e3e3'%3E%3Cpath d='M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z'/%3E%3C/svg%3E");
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            translate: 0 -50%;
+            transition: rotate 0.25s ease;
+        }
+
+        .concept-card-title {
+            margin: 0;
+        }
+    }
+
+    .concept-card-body {
+        padding: 1.5rem;
+
+        .concept-card-equation {
+            background-color: var(--equation-bg-color);
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            border-radius: 0.5rem;
+        }
+
+        .variables {
+            box-sizing: content-box;
+            border-top: 2px var(--equation-bg-color) solid;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.5s ease;
+
+            .variable-item {
+                background-color: var(--equation-bg-color);
+                padding: 0.25rem 0.5rem;
+                border-radius: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &.expanded {
+        .concept-card-header {
+            &::after {
+                rotate: 180deg;
+            }
+        }
+        .concept-card-body {
+            .variables {
+                margin-top: 1rem;
+                padding-top: 1rem;
+                opacity: 1;
+            }
+        }
+    }
+}

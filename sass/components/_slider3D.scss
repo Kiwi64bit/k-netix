@@ -1,14 +1,15 @@
 @use "../abstracts" as *;
 
 .slider-3d {
+    $breakpoint: "";
     --view-index: 0;
-    --slider-size: 10;
-    --slider-card-width: max(30vw, 100px);
+    --slider-card-width: max(25vw, 100px);
     --slider-card-height: calc(var(--slider-card-width) / (var(--slider-card-aspect-ratio)));
     --slider-card-margin: calc(var(--slider-card-width) / 4);
     --slider-card-aspect-ratio: 3 / 4;
-    --slider-radius: calc((var(--slider-card-width) + var(--slider-card-margin)) * var(--slider-size) / 6.283185);
-    --slider-perspective: var(--slider-radius);
+    --slider-radius: calc((var(--slider-card-width) + var(--slider-card-margin)) * var(--size) / 6.283185);
+    --slider-width: 50vw;
+    --slider-perspective: min(700px, var(--slider-radius));
     --slider-rotationX: 0deg;
     --slider-offsetY: 0px;
     --slider-height: calc(var(--slider-card-height) + 100px);
@@ -20,24 +21,6 @@
     margin-inline: auto;
     touch-action: pan-y;
     z-index: 0;
-    @include respond("md") {
-        --slider-card-width: min(15vw, 185px);
-        --slider-card-margin: calc(var(--slider-card-width) / 2);
-        --slider-rotationX: -15deg;
-        --slider-perspective: calc(var(--slider-radius) * 2 + 100px);
-        --slider-distance: calc(var(--slider-radius) * cos(var(--slider-rotationX)));
-        --slider-far-scale-factor: calc(
-            var(--slider-perspective) / (var(--slider-perspective) + var(--slider-distance))
-        );
-        --slider-near-scale-factor: calc(
-            var(--slider-perspective) / (var(--slider-perspective) - var(--slider-distance))
-        );
-        --slider-offsetY: calc(
-            var(--slider-radius) * sin(var(--slider-rotationX)) *
-                (var(--slider-near-scale-factor) - var(--slider-far-scale-factor)) / 2
-        );
-        --slider-height: min(calc(var(--slider-radius) * 2), 100vh);
-    }
 
     .slider-3d-perspective-container {
         position: absolute;
@@ -49,17 +32,13 @@
 
         .slider-3d-inner {
             --slider-inner-rotationY: calc(180deg + var(--view-index, 0) * (360 / var(--size)) * 1deg);
-            --slider-inner-translateZ: 0;
+            --slider-inner-translateZ: calc(var(--slider-radius) - var(--slider-perspective));
             transform: rotateX(var(--slider-rotationX)) translateZ(var(--slider-inner-translateZ))
                 rotateY(var(--slider-inner-rotationY));
             width: var(--slider-card-width);
             aspect-ratio: var(--slider-card-aspect-ratio);
             transform-style: preserve-3d;
             transition: transform 0.5s ease-in-out;
-            @include respond("md") {
-                --slider-inner-rotationY: calc(var(--view-index, 0) * (360 / var(--size)) * -1deg);
-                --slider-inner-translateZ: 0px;
-            }
 
             .item {
                 --slider-item-offsetZ: var(--slider-radius);
@@ -75,32 +54,12 @@
                     translateZ(var(--slider-item-offsetZ)) rotateY(180deg);
                 backface-visibility: hidden;
                 pointer-events: none;
-                @include respond("md") {
-                    --slider-item-offsetY: 0px;
-                    --slider-item-rotationX: 0deg;
-                    transform: rotateY(calc(var(--index) * (360 / var(--size)) * 1deg))
-                        rotateX(var(--slider-item-rotationX)) translateZ(var(--slider-item-offsetZ))
-                        translateY(var(--slider-item-offsetY));
-                    backface-visibility: visible;
-                }
 
                 &.in-view {
-                    --slider-item-offsetZ: 0px;
+                    --slider-item-blur: 0px;
+                    --slider-item-offsetZ: calc(var(--slider-radius) - var(--slider-perspective));
                     pointer-events: auto;
                     transition: transform 0.25s 0.25s ease-in-out;
-                    @include respond("md") {
-                        --slider-item-offsetY: calc(var(--slider-offsetY) / -2);
-                        --slider-item-rotationX: calc(var(--slider-rotationX) * -1);
-                        --slider-item-offsetZ: calc(var(--slider-perspective) - var(--slider-perspective) / 2);
-                    }
-                }
-
-                &.in-view,
-                &.previous-item,
-                &.next-item {
-                    &::after {
-                        --slider-item-blur: 0px;
-                    }
                 }
 
                 &::after {
@@ -159,7 +118,7 @@
         .slider-control-icon svg {
             width: 2rem;
             height: 2rem;
-            fill: #fff;
+            fill: var(--accent-color);
         }
     }
 
@@ -194,7 +153,7 @@
             margin-left: 4px;
             text-indent: -999px;
             cursor: pointer;
-            background-color: #fff;
+            background-color: var(--accent-color);
             background-clip: padding-box;
             border: 0;
             border-top: 10px solid transparent;

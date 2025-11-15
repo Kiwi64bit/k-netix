@@ -6,17 +6,33 @@ $breakpoints: (
     "md": 768px,
     "lg": 992px,
     "xl": 1200px,
-    "xxl": 1400px,
+    "xxl": 1400px
 );
 
-$light-navy: hsl(240, 40%, 16%);
-$dark-navy: hsl(240, 40%, 10%);
-$gunmetal-grey: hsl(200, 12%, 24%);
-$cyan: hsl(180, 100%, 50%);
-$magenta: hsl(300, 100%, 50%);
+$gray-950: hsl(225, 70%, 5%);
+$purple-950: hsl(275, 70%, 15%);
+$indigo-950: hsl(245, 50%, 20%);
 
-$primary-color: $cyan;
-$accent-color: $magenta;
+$bright-purple: hsl(275, 90%, 60%);
+$pink: hsl(320, 90%, 60%);
+$electric-blue: hsl(200, 90%, 60%);
+$teal: hsl(180, 80%, 45%);
+
+$dark-gray: hsl(224, 30%, 10%);
+$purple-gray: hsl(275, 40%, 25%);
+$muted-indigo: hsl(245, 30%, 25%);
+
+$bale-blue: #6366f1;
+$violet-blue: #8b5cf6;
+
+$gradient-purple: linear-gradient(135deg, #{$gray-950}, #{$purple-950}, #{$indigo-950});
+
+$gradient-1: linear-gradient(90deg, #8b5cf6 0%, #6366f1 100%);
+$gradient-2: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+$gradient-3: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
+
+$primary-color: $bright-purple;
+$accent-color: $primary-color;
 
 $font1: "IBM Plex Sans", sans-serif;
 $font2: "Inter", sans-serif;

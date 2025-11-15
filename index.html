@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.css.map">
     <script src="js/bootstrap.bundle.js" defer></script>
-    <script src="js/slider3D.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+    <script src="js/jquery-3.7.1.js" defer></script>
+    <script src="js/slider3D.js" defer></script>
     <script src="js/index.js" defer></script>
 </head>
 
@@ -43,7 +45,7 @@
                             <a class="nav-link" href="#simulations">Simulations</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#lessons">Lessons</a>
+                            <a class="nav-link" href="#learn">Learn</a>
                         </li>
                         <li class="d-flex justify-content-center align-items-center gap-2 px-2">
                             <button class="btn btn-custom-primary">Sign Up</button>
@@ -123,7 +125,7 @@
     </section>
 
     <section id="simulations" class="simulations-preview">
-        <div class="slider-3d" style="--size: 10;">
+        <div class="slider-3d" style="--size: 20;">
             <div class="slider-indicators">
                 <button type="button" data-slide-to="0" class="active"></button>
                 <button type="button" data-slide-to="1"></button>
@@ -135,6 +137,16 @@
                 <button type="button" data-slide-to="7"></button>
                 <button type="button" data-slide-to="8"></button>
                 <button type="button" data-slide-to="9"></button>
+                <button type="button" data-slide-to="10"></button>
+                <button type="button" data-slide-to="11"></button>
+                <button type="button" data-slide-to="12"></button>
+                <button type="button" data-slide-to="13"></button>
+                <button type="button" data-slide-to="14"></button>
+                <button type="button" data-slide-to="15"></button>
+                <button type="button" data-slide-to="16"></button>
+                <button type="button" data-slide-to="17"></button>
+                <button type="button" data-slide-to="18"></button>
+                <button type="button" data-slide-to="19"></button>
             </div>
             <div class="slider-3d-perspective-container">
                 <div class="slider-3d-inner">
@@ -148,6 +160,16 @@
                     <div class="item" style="--index: 7;"><img src="images/dragon_8.jpg" alt="dragon_8"></div>
                     <div class="item" style="--index: 8;"><img src="images/dragon_9.jpg" alt="dragon_9"></div>
                     <div class="item" style="--index: 9;"><img src="images/dragon_10.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 10;"><img src="images/dragon_1.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 11;"><img src="images/dragon_2.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 12;"><img src="images/dragon_3.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 13;"><img src="images/dragon_4.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 14;"><img src="images/dragon_5.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 15;"><img src="images/dragon_6.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 16;"><img src="images/dragon_7.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 17;"><img src="images/dragon_8.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 18;"><img src="images/dragon_9.jpg" alt="dragon_10"></div>
+                    <div class="item" style="--index: 19;"><img src="images/dragon_10.jpg" alt="dragon_10"></div>
                 </div>
             </div>
             <button class="slider-control-prev" type="button">
@@ -167,8 +189,128 @@
         </div>
     </section>
 
-    <section id="learn" class="learn">
-        
+    <section id="learn" class="learn px-5">
+        <div class="concept-card-container">
+            <div class="concept-card">
+                <div class="concept-card-header">
+                    <h4 class="concept-card-title">Displacement</h4>
+                </div>
+                <div class="concept-card-body">
+                    <p>The change in position of an object. It's a vector quantity with both magnitude and
+                        direction.</p>
+                    <div class="concept-card-equation">
+                        \( \vec{x} = \vec{x_f} - \vec{x_i} \)
+                    </div>
+
+                    <div class="variables">
+                        <h5>Variables</h5>
+                        <div class="variable-item">\( \Delta{x} = \text{displacement} \) </div>
+                        <div class="variable-item">\( x_f = \text{final position} \) </div>
+                        <div class="variable-item">\( x_i = \text{initial position} \) </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-card-header">
+                    <h4 class="concept-card-title">Displacement</h4>
+                </div>
+                <div class="concept-card-body">
+                    <p>The change in position of an object. It's a vector quantity with both magnitude and
+                        direction.</p>
+                    <div class="concept-card-equation">
+                        \( \vec{x} = \vec{x_f} - \vec{x_i} \)
+                    </div>
+
+                    <div class="variables">
+                        <h5>Variables</h5>
+                        <div class="variable-item">\( \Delta{x} = \text{displacement} \) </div>
+                        <div class="variable-item">\( x_f = \text{final position} \) </div>
+                        <div class="variable-item">\( x_i = \text{initial position} \) </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-card-header">
+                    <h4 class="concept-card-title">Displacement</h4>
+                </div>
+                <div class="concept-card-body">
+                    <p>The change in position of an object. It's a vector quantity with both magnitude and
+                        direction.</p>
+                    <div class="concept-card-equation">
+                        \( \vec{x} = \vec{x_f} - \vec{x_i} \)
+                    </div>
+
+                    <div class="variables">
+                        <h5>Variables</h5>
+                        <div class="variable-item">\( \Delta{x} = \text{displacement} \) </div>
+                        <div class="variable-item">\( x_f = \text{final position} \) </div>
+                        <div class="variable-item">\( x_i = \text{initial position} \) </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-card-header">
+                    <h4 class="concept-card-title">Displacement</h4>
+                </div>
+                <div class="concept-card-body">
+                    <p>The change in position of an object. It's a vector quantity with both magnitude and
+                        direction.</p>
+                    <div class="concept-card-equation">
+                        \( \vec{x} = \vec{x_f} - \vec{x_i} \)
+                    </div>
+
+                    <div class="variables">
+                        <h5>Variables</h5>
+                        <div class="variable-item">\( \Delta{x} = \text{displacement} \) </div>
+                        <div class="variable-item">\( x_f = \text{final position} \) </div>
+                        <div class="variable-item">\( x_i = \text{initial position} \) </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-card-header">
+                    <h4 class="concept-card-title">Displacement</h4>
+                </div>
+                <div class="concept-card-body">
+                    <p>The change in position of an object. It's a vector quantity with both magnitude and
+                        direction.</p>
+                    <div class="concept-card-equation">
+                        \( \vec{x} = \vec{x_f} - \vec{x_i} \)
+                    </div>
+
+                    <div class="variables">
+                        <h5>Variables</h5>
+                        <div class="variable-item">\( \Delta{x} = \text{displacement} \) </div>
+                        <div class="variable-item">\( x_f = \text{final position} \) </div>
+                        <div class="variable-item">\( x_i = \text{initial position} \) </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-card-header">
+                    <h4 class="concept-card-title">Displacement</h4>
+                </div>
+                <div class="concept-card-body">
+                    <p>The change in position of an object. It's a vector quantity with both magnitude and
+                        direction.</p>
+                    <div class="concept-card-equation">
+                        \( \vec{x} = \vec{x_f} - \vec{x_i} \)
+                    </div>
+
+                    <div class="variables">
+                        <h5>Variables</h5>
+                        <div class="variable-item">\( \Delta{x} = \text{displacement} \) </div>
+                        <div class="variable-item">\( x_f = \text{final position} \) </div>
+                        <div class="variable-item">\( x_i = \text{initial position} \) </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
