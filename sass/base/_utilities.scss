@@ -9,6 +9,26 @@
     fill: $primary-color;
 }
 
+.w-fit-content {
+    width: fit-content;
+}
+
+.title {
+    text-align: center;
+    color: var(--color, #fff);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, var(--color, #fff)) 50% 100% / 16rem 3px no-repeat;
+}
+
+.title-1 {
+    --color: #{$bright-purple};
+}
+
+.title-2 {
+    --color: #{$violet-blue};
+}
+
 .btn-custom-primary {
     --bs-btn-color: #000;
     --bs-btn-bg: #{$primary-color};
@@ -42,5 +62,3 @@
     --bs-btn-disabled-bg: hsla(0, 0%, 94%, 0.1);
     --bs-btn-disabled-border-color: hsla(0, 0%, 94%, 0);
 }
-
-

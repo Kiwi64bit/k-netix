@@ -2,6 +2,7 @@
 :root {
   --primary-color: hsl(275, 90%, 60%);
   --accent-color: hsl(275, 90%, 60%);
+  --text-color: #fff;
 }
 
 body {
@@ -29,6 +30,26 @@ h6 {
 
 .fill-primary {
   fill: hsl(275, 90%, 60%);
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.title {
+  text-align: center;
+  color: var(--color, #fff);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, var(--color, #fff)) 50% 100%/16rem 3px no-repeat;
+}
+
+.title-1 {
+  --color: hsl(275, 90%, 60%);
+}
+
+.title-2 {
+  --color: #8b5cf6;
 }
 
 .btn-custom-primary {
@@ -123,14 +144,14 @@ header {
   font-weight: 600;
 }
 
-.about {
+.about .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
-.about .about-card {
+.about .about-container .about-card {
   --offset-x: 25%;
   --translate-x: 0;
   --translate-y: 0;
@@ -144,26 +165,26 @@ header {
   transition: translate 0.25s ease, box-shadow 0.25s ease;
 }
 @media (min-width: 768px) {
-  .about .about-card {
+  .about .about-container .about-card {
     width: calc(100% / (1 + 2 * var(--offset-x) / 100%));
     max-width: 40rem;
   }
 }
-.about .about-card:hover {
+.about .about-container .about-card:hover {
   --translate-y: -12.5px;
   box-shadow: 0 5px hsl(from var(--card-color) h s l/0.4), 0 10px hsl(from var(--card-color) h s l/0.3), 0 15px hsl(from var(--card-color) h s l/0.2), 0 20px hsl(from var(--card-color) h s l/0.1), 0 25px hsl(from var(--card-color) h s l/0.05), 0 0 16px hsl(from var(--card-color) h s l/0.4);
 }
 @media (min-width: 768px) {
-  .about .about-card:nth-of-type(2n) {
+  .about .about-container .about-card:nth-of-type(2n) {
     --translate-x: var(--offset-x);
   }
 }
 @media (min-width: 768px) {
-  .about .about-card:nth-of-type(2n + 1) {
+  .about .about-container .about-card:nth-of-type(2n + 1) {
     --translate-x: calc(-1 * var(--offset-x));
   }
 }
-.about .about-card h4 {
+.about .about-container .about-card h4 {
   color: var(--card-color);
 }
 
@@ -319,6 +340,27 @@ header {
   opacity: 1;
 }
 
+.learn .nav-pills {
+  border: 2px #8b5cf6 solid;
+  border-radius: 0.5rem;
+}
+.learn .nav-pills .nav-link {
+  color: #8b5cf6;
+}
+.learn .nav-pills .nav-link.active {
+  background-color: #8b5cf6;
+  color: var(--text-color);
+}
+.learn .tab-pane .fade-up {
+  translate: 0 20px;
+  opacity: 0;
+}
+.learn .tab-pane.show .fade-up {
+  translate: 0 0;
+  opacity: 1;
+  transition: translate 0.5s calc(var(--index, 0) * 100ms) ease, opacity 0.5s calc(var(--index, 0) * 100ms) ease;
+}
+
 .concept-card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -398,7 +440,7 @@ header {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.5s ease;
+  transition: all 0.75s ease, max-height 0.75s linear(0, 0.05 8.7%, 0.102 14.8%, 0.169 20%, 0.258 24.7%, 0.375 29.2%, 0.521 33.6%, 0.999 44.7%, 0.661 53.5%, 0.586 57%, 0.561 60.3%, 0.583 63.4%, 0.646 66.6%, 0.998 77.4%, 0.915 81.4%, 0.895 83.2%, 0.888 85.1%, 0.904 88.3%, 0.986 95.7%, 1);
 }
 .concept-card .concept-card-body .variables .variable-item {
   background-color: var(--equation-bg-color);
@@ -413,6 +455,95 @@ header {
   margin-top: 1rem;
   padding-top: 1rem;
   opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+.equation-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.equation-card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: border 0.25s ease;
+  position: relative;
+  cursor: pointer;
+}
+.equation-card.flipped .front-face {
+  transform: rotateY(180deg);
+}
+.equation-card.flipped .back-face {
+  transform: rotateY(0deg);
+}
+.equation-card .front-face,
+.equation-card .back-face {
+  border: 2px hsl(275, 90%, 60%) solid;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+  backface-visibility: hidden;
+  transition: transform 1s linear(0, 0.009 1.2%, 0.034 2.4%, 0.077 3.7%, 0.137 5.1%, 0.269 7.6%, 0.694 14.8%, 0.811 17.1%, 0.903 19.2%, 0.979 21.3%, 1.041 23.5%, 1.087 25.7%, 1.118 28%, 1.137 31.3%, 1.132 35.1%, 1.018 50.7%, 0.997 55.2%, 0.985 59.8%, 0.981 66.7%, 0.999 85.8%, 1);
+}
+.equation-card .front-face {
+  position: absolute;
+  inset: 0;
+  background-color: hsla(275, 90%, 60%, 0.1);
+}
+.equation-card .front-face .click {
+  color: hsl(275, 90%, 60%);
+}
+.equation-card .back-face {
+  border: 2px #6366f1 solid;
+  background-color: hsla(224, 30%, 10%, 0.5);
+  transform: rotateY(-180deg);
+}
+.equation-card .back-face .click {
+  color: #6366f1;
+}
+.equation-card .equation-card-title::before {
+  content: "#";
+  font-weight: 900;
+  margin-inline: 0.5rem;
+  color: #8b5cf6;
+}
+.equation-card .equation-card-equation {
+  background-image: linear-gradient(90deg, hsl(275, 90%, 60%) 0%, #6366f1 100%);
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.equation-card .equation-card-header {
+  color: #6366f1;
+}
+.equation-card hr {
+  border-color: #6366f1;
+}
+.equation-card .equation-card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.equation-card .click {
+  margin: 0;
+  animation: pulse 3s ease-in-out 0s infinite normal forwards;
 }
 
 /*# sourceMappingURL=style.css.map */

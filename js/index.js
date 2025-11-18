@@ -15,33 +15,21 @@ $(".concept-card-container").on("click", ".concept-card", function (event) {
      */
     const $variablesContainer = $card.find(".variables");
 
-    // Only proceed if the click truly belongs to this card.
-    if (shouldHandleClick(event, $card)) {
-        toggleCard($card, $variablesContainer);
-    }
+    toggleCard($card, $variablesContainer);
+});
+
+$(".equation-card-container").on("click", ".equation-card", function (event) {
+    /**
+     * The jQuery-wrapped card element that was clicked.
+     * @type {JQuery<HTMLElement>}
+     */
+    const $card = $(this);
+    $card.toggleClass("flipped")
 });
 
 /* ------------------------------------------------------------------ */
 /* --------------------------- FUNCTIONS ----------------------------- */
 /* ------------------------------------------------------------------ */
-
-/**
- * Determines whether the clicked target is inside the card
- * such that this specific card should handle the event.
- *
- * @param {MouseEvent} event - The original click event.
- * @param {JQuery<HTMLElement>} $card - The card being evaluated.
- * @returns {boolean} True if the event should trigger card expansion/collapse.
- */
-function shouldHandleClick(event, $card) {
-    /**
-     * @type {HTMLElement}
-     */
-    const clickedElement = event.target;
-
-    // Ensure the click happened inside *this* card, not another one
-    return $(clickedElement).closest(".concept-card")[0] === $card[0];
-}
 
 /**
  * Toggles the card's expanded/collapsed state.

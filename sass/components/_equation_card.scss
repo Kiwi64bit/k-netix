@@ -1,0 +1,131 @@
+@use "../abstracts" as *;
+@use "sass:color";
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.equation-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.equation-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: border 0.25s ease;
+    position: relative;
+    cursor: pointer;
+
+    &.flipped {
+        .front-face {
+            transform: rotateY(180deg);
+        }
+        .back-face {
+            transform: rotateY(0deg);
+        }
+    }
+
+    .front-face,
+    .back-face {
+        border: 2px #{$bright-purple} solid;
+        border-radius: 1rem;
+        overflow: hidden;
+        padding: 1rem;
+        backdrop-filter: blur(4px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 1rem;
+        backface-visibility: hidden;
+        transition: transform 1s
+            linear(
+                0,
+                0.009 1.2%,
+                0.034 2.4%,
+                0.077 3.7%,
+                0.137 5.1%,
+                0.269 7.6%,
+                0.694 14.8%,
+                0.811 17.1%,
+                0.903 19.2%,
+                0.979 21.3%,
+                1.041 23.5%,
+                1.087 25.7%,
+                1.118 28%,
+                1.137 31.3%,
+                1.132 35.1%,
+                1.018 50.7%,
+                0.997 55.2%,
+                0.985 59.8%,
+                0.981 66.7%,
+                0.999 85.8%,
+                1
+            );
+    }
+
+    .front-face {
+        position: absolute;
+        inset: 0;
+        background-color: color.adjust($bright-purple, $alpha: -0.9);
+
+        .click {
+            color: $bright-purple;
+        }
+    }
+
+    .back-face {
+        border: 2px #{$bale-blue} solid;
+        background-color: color.adjust($dark-gray, $alpha: -0.5);
+        transform: rotateY(-180deg);
+
+        .click {
+            color: $bale-blue;
+        }
+    }
+
+    .equation-card-title::before {
+        content: "#";
+        font-weight: 900;
+        margin-inline: 0.5rem;
+        color: $violet-blue;
+    }
+
+    .equation-card-equation {
+        background-image: $gradient-1;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    .equation-card-header {
+        color: $bale-blue;
+    }
+
+    hr {
+        border-color: $bale-blue;
+    }
+
+    .equation-card-footer {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .click {
+        margin: 0;
+        animation: pulse 3s ease-in-out 0s infinite normal forwards;
+    }
+}

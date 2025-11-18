@@ -27,7 +27,7 @@ $violet-blue: #8b5cf6;
 
 $gradient-purple: linear-gradient(135deg, #{$gray-950}, #{$purple-950}, #{$indigo-950});
 
-$gradient-1: linear-gradient(90deg, #8b5cf6 0%, #6366f1 100%);
+$gradient-1: linear-gradient(90deg, $bright-purple 0%, #6366f1 100%);
 $gradient-2: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
 $gradient-3: linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%);
 

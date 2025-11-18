@@ -89,7 +89,31 @@
             max-height: 0;
             opacity: 0;
             overflow: hidden;
-            transition: all 0.5s ease;
+            transition:
+                all 0.75s ease,
+                max-height 0.75s
+                    linear(
+                        0,
+                        0.05 8.7%,
+                        0.102 14.8%,
+                        0.169 20%,
+                        0.258 24.7%,
+                        0.375 29.2%,
+                        0.521 33.6%,
+                        0.999 44.7%,
+                        0.661 53.5%,
+                        0.586 57%,
+                        0.561 60.3%,
+                        0.583 63.4%,
+                        0.646 66.6%,
+                        0.998 77.4%,
+                        0.915 81.4%,
+                        0.895 83.2%,
+                        0.888 85.1%,
+                        0.904 88.3%,
+                        0.986 95.7%,
+                        1
+                    );
 
             .variable-item {
                 background-color: var(--equation-bg-color);

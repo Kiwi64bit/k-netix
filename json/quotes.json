@@ -1,0 +1,802 @@
+[
+    {
+        "quote": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "If you can't explain it simply, you don't understand it well enough.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Life is like riding a bicycle. To keep your balance you must keep moving.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "God does not play dice with the universe.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Not everything that can be counted counts, and not everything that counts can be counted.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "The important thing is not to stop questioning. Curiosity has its own reason for existing.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "I have no special talent. I am only passionately curious.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Science is a way of thinking much more than it is a body of knowledge.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "Somewhere, something incredible is waiting to be known.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "We are made of star-stuff. We are a way for the cosmos to know itself.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "The universe seems neither benign nor hostile, merely indifferent.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "We are like butterflies who flutter for a day and think it is forever.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.",
+        "author": "Carl Sagan"
+    },
+    {
+        "quote": "The first principle is that you must not fool yourself—and you are the easiest person to fool.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "I think I can safely say that nobody understands quantum mechanics.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "Physics is like sex: sure, it may give some practical results, but that's not why we do it.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "Experiment is the sole judge of scientific truth.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "Science is the belief in the ignorance of experts.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "What I cannot create, I do not understand.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "The pleasure of finding things out is the most important thing in my life.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "An expert is a person who has made all the mistakes that can be made in a very narrow field.",
+        "author": "Niels Bohr"
+    },
+    {
+        "quote": "We are all agreed that your theory is crazy. The question which divides us is whether it is crazy enough to have a chance of being correct.",
+        "author": "Niels Bohr"
+    },
+    {
+        "quote": "Prediction is very difficult, especially about the future.",
+        "author": "Niels Bohr"
+    },
+    {
+        "quote": "Anyone who is not shocked by quantum theory has not understood it.",
+        "author": "Niels Bohr"
+    },
+    {
+        "quote": "The opposite of a correct statement is a false statement. But the opposite of a profound truth may well be another profound truth.",
+        "author": "Niels Bohr"
+    },
+    {
+        "quote": "Every sentence I utter must be understood not as an affirmation, but as a question.",
+        "author": "Niels Bohr"
+    },
+    {
+        "quote": "What we observe is not nature itself, but nature exposed to our method of questioning.",
+        "author": "Werner Heisenberg"
+    },
+    {
+        "quote": "The more precisely the position is determined, the less precisely the momentum is known.",
+        "author": "Werner Heisenberg"
+    },
+    {
+        "quote": "Science and everyday life cannot and should not be separated.",
+        "author": "Werner Heisenberg"
+    },
+    {
+        "quote": "Not only is the universe stranger than we think, it is stranger than we can think.",
+        "author": "Werner Heisenberg"
+    },
+    {
+        "quote": "In the strict formulation of quantum mechanics, there is no place for the 'observer'.",
+        "author": "Werner Heisenberg"
+    },
+    {
+        "quote": "The reality we can put into words is never reality itself.",
+        "author": "Werner Heisenberg"
+    },
+    {
+        "quote": "Science cannot solve the ultimate mystery of nature. And that is because, in the last analysis, we ourselves are part of the mystery that we are trying to solve.",
+        "author": "Max Planck"
+    },
+    {
+        "quote": "A new scientific truth does not triumph by convincing its opponents and making them see the light, but rather because its opponents eventually die.",
+        "author": "Max Planck"
+    },
+    {
+        "quote": "Science cannot solve ultimate problems, for we ourselves are part of the problem.",
+        "author": "Max Planck"
+    },
+    {
+        "quote": "When you change the way you look at things, the things you look at change.",
+        "author": "Max Planck"
+    },
+    {
+        "quote": "The truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "If I have seen further it is by standing on the shoulders of Giants.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "What we know is a drop, what we don't know is an ocean.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "I can calculate the motion of heavenly bodies, but not the madness of people.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "To every action there is always opposed an equal reaction.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "Nature is pleased with simplicity. And nature is no dummy.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "And yet it moves.",
+        "author": "Galileo Galilei"
+    },
+    {
+        "quote": "All truths are easy to understand once they are discovered; the point is to discover them.",
+        "author": "Galileo Galilei"
+    },
+    {
+        "quote": "Measure what can be measured, and make measurable what cannot be measured.",
+        "author": "Galileo Galilei"
+    },
+    {
+        "quote": "In questions of science, the authority of a thousand is not worth the humble reasoning of a single individual.",
+        "author": "Galileo Galilei"
+    },
+    {
+        "quote": "Mathematics is the language in which God has written the universe.",
+        "author": "Galileo Galilei"
+    },
+    {
+        "quote": "Euler's identity is the most remarkable formula in mathematics.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "Mathematics is the queen of the sciences.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "Nothing takes place in the world whose meaning is not that of some maximum or minimum.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "The laws of nature are but the mathematical thoughts of God.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "However difficult life may seem, there is always something you can do and succeed at.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "Intelligence is the ability to adapt to change.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "Life would be tragic if it weren't funny.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "The universe doesn't allow perfection.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "In science it often happens that scientists say, 'You know that’s a really good argument; my position is mistaken,' and then they actually change their minds. That is the most rare thing in politics.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "Understanding is deeper than knowledge.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "You never really understand something until you can explain it to your grandmother.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Science is a way of trying not to fool yourself.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "All of science is nothing more than the refinement of everyday thinking.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "I never think of the future. It comes soon enough.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Time is what prevents everything from happening at once.",
+        "author": "John Archibald Wheeler"
+    },
+    {
+        "quote": "We are a way for the cosmos to know itself.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "A mathematician is a device for turning coffee into theorems.",
+        "author": "Paul Erdős"
+    },
+    {
+        "quote": "The book of nature is written in the language of mathematics.",
+        "author": "Galileo Galilei"
+    },
+    {
+        "quote": "Science is organized knowledge.",
+        "author": "Herbert Spencer"
+    },
+    {
+        "quote": "The scientist is not a person who gives the right answers, he is one who asks the right questions.",
+        "author": "Claude Lévi-Strauss"
+    },
+    {
+        "quote": "Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.",
+        "author": "William Paul Thurston"
+    },
+    {
+        "quote": "Pure mathematics is the world's best game. It is more absorbing than chess, more of a gamble than poker, and lasts longer than Monopoly.",
+        "author": "Richard K. Guy"
+    },
+    {
+        "quote": "In science, there are no shortcuts to truth.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "Science must begin with myths, and with the criticism of myths.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "We are not students of some subject matter, but students of problems.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "Mathematics knows no races or geographic boundaries; for mathematics, the cultural world is one country.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "We must know. We will know.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "The beauty of a physical theory lies in its simplicity and generality.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "An equation for me has no meaning unless it expresses a thought of God.",
+        "author": "Srinivasa Ramanujan"
+    },
+    {
+        "quote": "It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment.",
+        "author": "Carl Friedrich Gauss"
+    },
+    {
+        "quote": "The art of doing mathematics consists in finding that special case which contains all the germs of generality.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "Mathematics is the music of reason.",
+        "author": "James Joseph Sylvester"
+    },
+    {
+        "quote": "Mathematics is a language.",
+        "author": "Josiah Willard Gibbs"
+    },
+    {
+        "quote": "In mathematics, the art of proposing a question must be held of higher value than solving it.",
+        "author": "Georg Cantor"
+    },
+    {
+        "quote": "The most incomprehensible thing about the world is that it is comprehensible.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Mathematics is the most beautiful and most powerful creation of the human spirit.",
+        "author": "Stefan Banach"
+    },
+    {
+        "quote": "Science is the belief in the ignorance of experts.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "It is not knowing, but teaching, which is the most valuable.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "A mathematician should be capable of solving a problem in several ways.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "The scientist does not study nature because it is useful; he studies it because he delights in it.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "Mathematics is the art of giving the same name to different things.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "The study of nature is a limitless journey.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the sea-shore.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "God made the integers; all else is the work of man.",
+        "author": "Leopold Kronecker"
+    },
+    {
+        "quote": "Nothing is more practical than a good theory.",
+        "author": "Kurt Lewin"
+    },
+    {
+        "quote": "If I were not a physicist, I would probably be a musician.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Mathematics reveals its secrets only to those who approach it with pure love.",
+        "author": "Archimedes"
+    },
+    {
+        "quote": "Give me a place to stand, and I will move the world.",
+        "author": "Archimedes"
+    },
+    {
+        "quote": "Eureka! I have found it.",
+        "author": "Archimedes"
+    },
+    {
+        "quote": "Do not worry about your difficulties in mathematics, mine are still greater.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "In mathematics, you don't understand things. You just get used to them.",
+        "author": "John von Neumann"
+    },
+    {
+        "quote": "Anyone who attempts to generate random numbers by deterministic means is, of course, living in a state of sin.",
+        "author": "John von Neumann"
+    },
+    {
+        "quote": "There is no limit to the human mind.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "A mathematician is a machine for turning coffee into theorems.",
+        "author": "Paul Erdős"
+    },
+    {
+        "quote": "The joy of life comes from our encounters with new experiences.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "Science is a wonderful thing if one does not have to earn one's living at it.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "I am among those who think that science has great beauty.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "One never notices what has been done; one can only see what remains to be done.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Nothing in life is to be feared, it is only to be understood.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Be less curious about people and more curious about ideas.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "We must believe that we are gifted for something, and that this thing must be attained.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance.",
+        "author": "Claude Bernard"
+    },
+    {
+        "quote": "Science knows no country, because knowledge belongs to humanity, and is the torch which illuminates the world.",
+        "author": "Louis Pasteur"
+    },
+    {
+        "quote": "In the middle of difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "We cannot solve our problems with the same thinking we used when we created them.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Curiosity is the most powerful thing you own.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "The whole of science is nothing more than a refinement of everyday thinking.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Pure mathematics is, in its way, the poetry of logical ideas.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "If we knew what it was we were doing, it would not be called research, would it?",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Information is not knowledge.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Mathematics is the door and key to the sciences.",
+        "author": "Roger Bacon"
+    },
+    {
+        "quote": "Mathematics is the tool specially suited for dealing with abstract concepts of any kind and there is no limit to its power.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "Do not fear mistakes. You will know failure. Continue to reach out.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
+        "author": "Colin Powell"
+    },
+    {
+        "quote": "Mathematics is the most powerful weapon of thought available to man.",
+        "author": "Stefan Banach"
+    },
+    {
+        "quote": "Nothing in life is to be feared, it is only to be understood.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "One never notices what has been done; one can only see what remains to be done.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Science is the belief in the ignorance of experts.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "Science is organized knowledge.",
+        "author": "Herbert Spencer"
+    },
+    {
+        "quote": "The scientist is not a person who gives the right answers, he is one who asks the right questions.",
+        "author": "Claude Lévi-Strauss"
+    },
+    {
+        "quote": "Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.",
+        "author": "William Paul Thurston"
+    },
+    {
+        "quote": "Pure mathematics is the world's best game. It is more absorbing than chess, more of a gamble than poker, and lasts longer than Monopoly.",
+        "author": "Richard K. Guy"
+    },
+    {
+        "quote": "In science, there are no shortcuts to truth.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "Science must begin with myths, and with the criticism of myths.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "We are not students of some subject matter, but students of problems.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "Mathematics knows no races or geographic boundaries; for mathematics, the cultural world is one country.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "We must know. We will know.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "The beauty of a physical theory lies in its simplicity and generality.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "An equation for me has no meaning unless it expresses a thought of God.",
+        "author": "Srinivasa Ramanujan"
+    },
+    {
+        "quote": "It is not knowledge, but the act of learning, not possession but the act of getting there, which grants the greatest enjoyment.",
+        "author": "Carl Friedrich Gauss"
+    },
+    {
+        "quote": "The art of doing mathematics consists in finding that special case which contains all the germs of generality.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "Mathematics is the music of reason.",
+        "author": "James Joseph Sylvester"
+    },
+    {
+        "quote": "Mathematics is a language.",
+        "author": "Josiah Willard Gibbs"
+    },
+    {
+        "quote": "In mathematics, the art of proposing a question must be held of higher value than solving it.",
+        "author": "Georg Cantor"
+    },
+    {
+        "quote": "The most incomprehensible thing about the world is that it is comprehensible.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Mathematics is the most beautiful and most powerful creation of the human spirit.",
+        "author": "Stefan Banach"
+    },
+    {
+        "quote": "It is not knowing, but teaching, which is the most valuable.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "A mathematician should be capable of solving a problem in several ways.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "The scientist does not study nature because it is useful; he studies it because he delights in it.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "Mathematics is the art of giving the same name to different things.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "The study of nature is a limitless journey.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the sea-shore.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "God made the integers; all else is the work of man.",
+        "author": "Leopold Kronecker"
+    },
+    {
+        "quote": "Nothing is more practical than a good theory.",
+        "author": "Kurt Lewin"
+    },
+    {
+        "quote": "If I were not a physicist, I would probably be a musician.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Mathematics reveals its secrets only to those who approach it with pure love.",
+        "author": "Archimedes"
+    },
+    {
+        "quote": "Give me a place to stand, and I will move the world.",
+        "author": "Archimedes"
+    },
+    {
+        "quote": "Eureka! I have found it.",
+        "author": "Archimedes"
+    },
+    {
+        "quote": "Do not worry about your difficulties in mathematics, mine are still greater.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "In mathematics, you don't understand things. You just get used to them.",
+        "author": "John von Neumann"
+    },
+    {
+        "quote": "Anyone who attempts to generate random numbers by deterministic means is, of course, living in a state of sin.",
+        "author": "John von Neumann"
+    },
+    {
+        "quote": "There is no limit to the human mind.",
+        "author": "Leonhard Euler"
+    },
+    {
+        "quote": "A mathematician is a machine for turning coffee into theorems.",
+        "author": "Paul Erdős"
+    },
+    {
+        "quote": "The joy of life comes from our encounters with new experiences.",
+        "author": "Stephen Hawking"
+    },
+    {
+        "quote": "Science is a wonderful thing if one does not have to earn one's living at it.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Truth is ever to be found in simplicity, and not in the multiplicity and confusion of things.",
+        "author": "Isaac Newton"
+    },
+    {
+        "quote": "I am among those who think that science has great beauty.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "One never notices what has been done; one can only see what remains to be done.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Nothing in life is to be feared, it is only to be understood.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Be less curious about people and more curious about ideas.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "We must believe that we are gifted for something, and that this thing must be attained.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance.",
+        "author": "Claude Bernard"
+    },
+    {
+        "quote": "Science knows no country, because knowledge belongs to humanity, and is the torch which illuminates the world.",
+        "author": "Louis Pasteur"
+    },
+    {
+        "quote": "In the middle of difficulty lies opportunity.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "We cannot solve our problems with the same thinking we used when we created them.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Curiosity is the most powerful thing you own.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "The whole of science is nothing more than a refinement of everyday thinking.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Pure mathematics is, in its way, the poetry of logical ideas.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "If we knew what it was we were doing, it would not be called research, would it?",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Information is not knowledge.",
+        "author": "Albert Einstein"
+    },
+    {
+        "quote": "Mathematics is the door and key to the sciences.",
+        "author": "Roger Bacon"
+    },
+    {
+        "quote": "Mathematics is the tool specially suited for dealing with abstract concepts of any kind and there is no limit to its power.",
+        "author": "Henri Poincaré"
+    },
+    {
+        "quote": "Do not fear mistakes. You will know failure. Continue to reach out.",
+        "author": "Benjamin Franklin"
+    },
+    {
+        "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
+        "author": "Colin Powell"
+    },
+    {
+        "quote": "Mathematics is the most powerful weapon of thought available to man.",
+        "author": "Stefan Banach"
+    },
+    {
+        "quote": "Nothing in life is to be feared, it is only to be understood.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "One never notices what has been done; one can only see what remains to be done.",
+        "author": "Marie Curie"
+    },
+    {
+        "quote": "Science is the belief in the ignorance of experts.",
+        "author": "Richard Feynman"
+    },
+    {
+        "quote": "Science is organized knowledge.",
+        "author": "Herbert Spencer"
+    },
+    {
+        "quote": "The scientist is not a person who gives the right answers, he is one who asks the right questions.",
+        "author": "Claude Lévi-Strauss"
+    },
+    {
+        "quote": "Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding.",
+        "author": "William Paul Thurston"
+    },
+    {
+        "quote": "Pure mathematics is the world's best game. It is more absorbing than chess, more of a gamble than poker, and lasts longer than Monopoly.",
+        "author": "Richard K. Guy"
+    },
+    {
+        "quote": "In science, there are no shortcuts to truth.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "Science must begin with myths, and with the criticism of myths.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "We are not students of some subject matter, but students of problems.",
+        "author": "Karl Popper"
+    },
+    {
+        "quote": "Mathematics knows no races or geographic boundaries; for mathematics, the cultural world is one country.",
+        "author": "David Hilbert"
+    },
+    {
+        "quote": "We must know. We will know.",
+        "author": "David Hilbert"
+    }
+]

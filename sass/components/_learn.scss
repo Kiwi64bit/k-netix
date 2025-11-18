@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+.learn {
+    .nav-pills {
+        border: 2px #{$violet-blue} solid;
+        border-radius: 0.5rem;
+
+        .nav-link {
+            color: $violet-blue;
+
+            &.active {
+                background-color: $violet-blue;
+                color: var(--text-color);
+            }
+        }
+    }
+    .tab-pane {
+        .fade-up {
+            translate: 0 20px;
+            opacity: 0;
+        }
+
+        &.show {
+            .fade-up {
+                translate: 0 0;
+                opacity: 1;
+                transition:
+                    translate 0.5s calc(var(--index, 0) * 100ms) ease,
+                    opacity 0.5s calc(var(--index, 0) * 100ms) ease;
+            }
+        }
+    }
+}
