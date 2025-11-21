@@ -3,9 +3,12 @@
 .simulations-preview {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     border: $main-border;
+    @include respond("md") {
+        grid-template-columns: 1fr 2fr;
+    }
 
     .title-ticket {
         --corner-radius: 1.5rem;

@@ -29,17 +29,29 @@
     .sign-up {
         --k: 1rem;
         padding-inline: 2rem;
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
         outline: transparent;
         border: none;
+        width: fit-content;
         background-color: $primary-color;
-        border-top-left-radius: 0.5rem;
-        border-top-right-radius: 0.5rem;
+        border-radius: 0.5rem;
         transition: background-color 0.25s ease;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, var(--k) 100%, 0 calc(100% - var(--k)));
+        @include respond("md") {
+            display: none;
+        }
+
+        &.right {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, var(--k) 100%, 0 calc(100% - var(--k)));
+            @include respond("md") {
+                display: block;
+            }
+        }
 
         &:hover {
             background-color: #{color.adjust($primary-color, $lightness: -10%)};

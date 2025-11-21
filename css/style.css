@@ -6,7 +6,7 @@
   font-stretch: 50 300;
   font-weight: 125 950;
   font-variation-settings: "INKT" 0.6;
-  src: url(../../assets/fonts/ABCWhytePlusVariable-Trial.ttf) format("truetype");
+  src: url(../assets/fonts/ABCWhytePlusVariable-Trial.ttf) format("truetype");
 }
 :root {
   --primary-color: #8b5cf6;
@@ -160,17 +160,32 @@ body {
 .navbar .sign-up {
   --k: 1rem;
   padding-inline: 2rem;
+  outline: transparent;
+  border: none;
+  width: fit-content;
+  background-color: #8b5cf6;
+  border-radius: 0.5rem;
+  transition: background-color 0.25s ease;
+}
+@media (min-width: 768px) {
+  .navbar .sign-up {
+    display: none;
+  }
+}
+.navbar .sign-up.right {
+  display: none;
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
-  outline: transparent;
-  border: none;
-  background-color: #8b5cf6;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  transition: background-color 0.25s ease;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   clip-path: polygon(0 0, 100% 0, 100% 100%, var(--k) 100%, 0 calc(100% - var(--k)));
+}
+@media (min-width: 768px) {
+  .navbar .sign-up.right {
+    display: block;
+  }
 }
 .navbar .sign-up:hover {
   background-color: rgb(104.6046511628, 43.6686046512, 243.3313953488);
@@ -367,9 +382,14 @@ main {
 .simulations-preview {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   border: 1px hsla(0, 0%, 100%, 0.2) solid;
+}
+@media (min-width: 768px) {
+  .simulations-preview {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 .simulations-preview .title-ticket {
   --corner-radius: 1.5rem;
@@ -542,10 +562,17 @@ main {
 
 .learn {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 50% 1fr 50%;
+  grid-template-rows: 1fr 1fr auto;
   border: 1px hsla(0, 0%, 100%, 0.2) solid;
-  grid-template-areas: "title . nav-pills" "tab-content tab-content tab-content";
+  grid-template-areas: "title . ." ". . nav-pills" "tab-content tab-content tab-content";
+}
+@media (min-width: 768px) {
+  .learn {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "title . nav-pills" "tab-content tab-content tab-content";
+  }
 }
 .learn .title-ticket {
   --k: 1.5rem;
@@ -565,7 +592,12 @@ main {
   --k: 1.5rem;
   background: hsl(224, 30%, 10%);
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, var(--k) 100%, 0 calc(100% - var(--k)), 0 0);
+  clip-path: polygon(var(--k) 0, 100% 0, 100% 100%, 0 100%, 0 var(--k));
+}
+@media (min-width: 768px) {
+  .learn .nav-pills {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, var(--k) 100%, 0 calc(100% - var(--k)), 0 0);
+  }
 }
 .learn .nav-pills .nav-item {
   width: 50%;
